@@ -1,10 +1,7 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
-
 
 export const BotonStyle = styled.button`
-    width: 50%;
+    width: 30%;
     height: 45px;
     color: ${ props => props.$activo ? 'var(--azul-letras)':'white'};
     border: ${ props => props.$activo ? '2px solid var(--azul-letras)' : '2px solid white' };
@@ -12,18 +9,17 @@ export const BotonStyle = styled.button`
     box-shadow: ${ props => props.$activo ? '0 0 5px 3px var(--azul-letras) inset' : '0 0 0 0 white inset'};
     font-family: "SourceSansProBold";
     font-size: 17px;
+    background-color: black;
     
 
 `
 
-export const BotonHeader = ({ value, activo=false, enlace }) => {
-    let navigate = useNavigate()  
-    function navegar(){
-          navigate(enlace)
-    }    
+const BotonGuardar = ({ value, activo=false, manejador }) => {
+    
     return (
-        
-            <BotonStyle $activo={activo} onClick={navegar}>{value}</BotonStyle>
-        
+        <BotonStyle $activo={activo} onClick={manejador}>{value}</BotonStyle>
     )
 }
+
+export default BotonGuardar
+

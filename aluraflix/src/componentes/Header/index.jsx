@@ -33,8 +33,8 @@ const Header = () => {
         <HeaderStyle>
             <Img src='/img/LogoMain.png' alt="Logo"/>
             <FrameBotones>
-                <BotonHeader value='HOME' activo={true}/>
-                <BotonHeader value='NUEVO VIDEO'/>
+                <BotonHeader value='HOME' enlace='/' activo={true}/>
+                <BotonHeader value='NUEVO VIDEO' enlace='/nueva'/>
             </FrameBotones>            
         </HeaderStyle>
     )
