@@ -9,10 +9,13 @@ const EditarContextoProvider = ({children}) => {
     const [infoCard, setInfoCard] = useState([
         {
             id:0,
+            titulo:'',
             categoria:'',
-            url:'',
-            color:'',
-            descripcion:''
+            imagen:'',
+            video:'',
+            descripcion:'',
+            color:''
+            
         }
     ])
 

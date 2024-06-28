@@ -1,0 +1,76 @@
+{
+  "videos": [
+    {
+      "id": "1",
+      "titulo": "Video 1",
+      "categoria": "FRONT END",
+      "imagen": "/img/VideoCard.png",
+      "video": "/img/VideoCard.png",
+      "descripcion": "Alguna descripcion",
+      "color": "#6BD1FF"
+    },
+    {
+      "id": "2",
+      "titulo": "Video 2",
+      "categoria": "FRONT END",
+      "imagen": "/img/VideoCard.png",
+      "video": "/img/VideoCard.png",
+      "descripcion": "Alguna descripcion 2",
+      "color": ""
+    },
+    {
+      "id": "3",
+      "titulo": "Video 3",
+      "categoria": "BACK END",
+      "imagen": "/img/VideoCard.png",
+      "video": "/img/VideoCard.png",
+      "descripcion": "Alguna descripcion",
+      "color": "#00C86F"
+    },
+    {
+      "id": "4",
+      "titulo": "Video 4",
+      "categoria": "BACK END",
+      "imagen": "/img/VideoCard.png",
+      "video": "/img/VideoCard.png",
+      "descripcion": "Alguna descripcion",
+      "color": "#00C86F"
+    },
+    {
+      "id": "5",
+      "titulo": "Video 5",
+      "categoria": "INOVACION Y GESTION",
+      "imagen": "/img/VideoCard.png",
+      "video": "/img/VideoCard.png",
+      "descripcion": "Alguna descripcion",
+      "color": "#FFBA05"
+    },
+    {
+      "id": "6",
+      "titulo": "Video 6",
+      "categoria": "INOVACION Y GESTION",
+      "imagen": "/img/VideoCard.png",
+      "video": "/img/VideoCard.png",
+      "descripcion": "Alguna descripcion",
+      "color": "#FFBA05"
+    },
+    {
+        "id": "7",
+        "titulo": "Video 7",
+        "categoria": "INOVACION Y GESTION",
+        "imagen": "/img/VideoCard.png",
+        "video": "/img/VideoCard.png",
+        "descripcion": "Alguna descripcion",
+        "color": "#FFBA05"
+    },
+    {
+      "id": "8",
+      "titulo": "algun titulo",
+      "categoria": "BACK END",
+      "imagen": "/img/VideoCard2.PNG",
+      "video": "/img/VideoCard2.PNG",
+      "descripcion": "tu descripcion",
+      "color": "#00C86F"
+    }
+  ]
+}

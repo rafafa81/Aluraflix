@@ -2,6 +2,7 @@ import { useContext } from "react";
 import styled from "styled-components";
 import { VideosContext } from "../VideosContext/VideosContext";
 import { EditarContexto } from "../VideosContext/EditarContexto";
+import { eliminar } from "../../js/conexionAPI";
 
 const CardStyle = styled.div`
     width: 432px;
@@ -42,12 +43,12 @@ const BotonStyle = styled.div`
     }
 `
 
-const Card = ({ colorEquipo , id}) => {
+const Card = ({ colorEquipo , id, imagen}) => {
     const {videos, setVideos} = useContext(VideosContext)
     const {mostrarDialog, setMostrarDialog, infoCard, setInfoCard} = useContext(EditarContexto)
     function eliminarCard(){
         setVideos(videos.filter(video=>video.id!=id))
-
+        eliminar('/videos'+`/${id}`)
     }
     function manejadorMostrarDialog(){
         setInfoCard([...(videos.filter(video=>video.id === id))])
@@ -56,7 +57,7 @@ const Card = ({ colorEquipo , id}) => {
 
     return (
         <CardStyle $equipoColor={colorEquipo}>
-            <img src='/img/VideoCard.png' alt='' />
+            <img src={imagen} alt='' />
             <div>
                 <BotonStyle onClick={eliminarCard}>
                     <img src='/img/basura.png' alt="" />

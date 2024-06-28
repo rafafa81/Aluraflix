@@ -36,7 +36,7 @@ const TeamSection = ({ nombreEquipo, colorEquipo }) => {
         <EquipoSection $colorEquipo={colorEquipo}>
             <div><label>{nombreEquipo}</label></div>
             <ContenedorVideos>
-                {videos.filter(video=>video.categoria === nombreEquipo).map((video=><Card colorEquipo={colorEquipo} id={video.id} key={video.id}/>))}
+                {videos.filter(video=>video.categoria === nombreEquipo).map((video=><Card colorEquipo={colorEquipo} id={video.id} key={video.id} imagen={video.imagen}/>))}
                 {/* <Card colorEquipo={colorEquipo} /> */}
             </ContenedorVideos>
         </EquipoSection>

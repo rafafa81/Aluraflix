@@ -39,7 +39,7 @@ function App() {
             <Route path='/' element={
               <><Header />
               <Banner /><Main>
-              {equiposLocal.map((equipo, index) => <TeamSection nombreEquipo={equipo.categoria} colorEquipo={equipo.color} key={index} />)}
+              {equiposLocal.map((equipo, index) => <TeamSection nombreEquipo={equipo.categoria} colorEquipo={equipo.color} key={index}/>)}
               <ModalZoom />
             </Main></>
             }/>

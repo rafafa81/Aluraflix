@@ -7,6 +7,7 @@ import { FormularioContexto } from "../componentes/VideosContext/FormularioConte
 import ListaOpciones from "../componentes/ListaOpciones";
 import TextArea from "../componentes/TextArea";
 import BotonGuardar from "../componentes/BotonGuardar";
+import { agregar } from "../js/conexionAPI";
 
 const MainStyle = styled.main`
   margin-top: 5px;
@@ -93,14 +94,30 @@ const NuevoVideo = () => {
 }
 
 function guardarInformacion(){
+  let color=''
+  switch( categoria ){
+    case 'front end':
+      color='#6BD1FF'
+      break;
+    case 'back end':
+      color="#00C86F"
+      break;
+    case 'inovacion y gestion':
+      color="#FFBA05"
+      break;
+  }
   let objetoGuardar = {
       id:(videos.length+1).toString(),
+      titulo:titulo,
       categoria:categoria.toUpperCase(),
-      url:imagen,
-      descripcion:descripcion
+      imagen:imagen,
+      video:video,
+      descripcion:descripcion,
+      color:color
   }
   console.log(objetoGuardar)
   setVideos([...videos, objetoGuardar])
+  agregar('/videos', objetoGuardar)
 }
   return (
     <MainStyle>
